@@ -15,9 +15,9 @@ app.use(express.static(__dirname + '/public'));
 app.get('/',function(req,res){
   res.sendFile("views/index.html", {"root": __dirname});
 });
-var cloudant = cloudant({account:process.env.cloudantusername, password:process.env.cloudantpassword});
+var cloudant = cloudant({account:global.env.cloudantusername, password:global.env.cloudantpassword});
 
-luckydrawdb = cloudant.db.use(process.env.dbname);
+luckydrawdb = cloudant.db.use(global.env.dbname);
 
 let rawdata = fs.readFileSync('config.json');  
 let value = JSON.parse(rawdata);
