@@ -1,0 +1,8 @@
+---
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  name: my-luckydraw-app
+  disk_quota: 128M
+  random-route: false
