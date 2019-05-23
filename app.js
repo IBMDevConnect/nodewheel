@@ -32,7 +32,7 @@ app.post('/luckydraw', function(req,res){
     
 luckydrawdb.insert(doc,function(err,body,header){
     if(err){
-    res.send('<h2>You can only attempt once!</h2>');
+    res.sendFile(__dirname + "/views/error.html");
         console.log('Error:'+err.message);
         return;
     }
