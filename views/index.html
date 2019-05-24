@@ -8,27 +8,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
         .backgroundimage{
-            background-image: url('../images/tassel.jpg');
+            background-image: url('../images/flags.png');
             background-repeat: repeat-x;
+            background-size:200px;
+        }
+        @font-face {
+            font-family: myPlexFont;
+            src: url('./public/ibm-plex-sans/IBMPlexSans-Regular.otf');
+        }
+        * {
+          font-family:myPlexFont;  
         }
     </style>
 </head>
 <body class="bg-light backgroundimage">
     <div class="container">
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
         <div class="py-5 text-center">
-            <h2>Try your luck and win an IBM Developer Swag</h2>
+            <h1>Try your luck and win an <span style="color:rgb(0, 158, 154)"> IBM Developer</span> Swag</h1>
             <p class="lead"></p>
         </div>
         <br/>
         <form method="POST" action="/luckydraw">
             <p class="lead"></p>
 
-            <h4>Enter your Email ID:</h4>
-            <input type="text" id="cloudemail" name="cloudemail" class="form-control" placeholder="Please enter your IBM Cloud Email ID" required>
+            <h3>Enter your Email ID:</h3>
+            <input type="email" id="cloudemail" name="cloudemail" class="form-control" class="form-control" placeholder="Please enter your IBM Cloud Email ID" required>
             <br />
-
-            <input type="submit" value="START" class="btn btn-primary btn-lg" />
+            
+            <input type="submit" value="START" class="btn btn-info btn-lg" />
         </form>
         <br /><br />
        <!-- <footer class="my-5 pt-5 text-muted text-center text-small">
