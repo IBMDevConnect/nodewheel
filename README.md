@@ -1,6 +1,6 @@
-## Deploy Node.JS lucky draw app
+## Deploy Node.JS lucky draw App
 
-https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBMDevConnect/winapp
+[Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBMDevConnect/winapp)
 
 1. Press the above `Deploy to IBM Cloud` button and then...
 
@@ -16,7 +16,7 @@ https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBMDevCo
    
    ![toolchain-pipeline](doc/images/1.png)
    
-4. Once deployed, the app can be viewed by clicking `Visit App URL`
+4. Once deployed, the app can be viewed by clicking on `Visit App URL`
 
    ![toolchain-pipeline](doc/images/2.png)
 
