@@ -40,7 +40,7 @@ luckydrawdb.insert(doc,function(err,body,header){
         cloudant.db.get('luckydraw',function(err,data){
         console.log(data);
     
-    if(data.doc_count%value['limit']==0){
+    if(data.doc_count%value['limit']==0 && value['itemsover']!='y'){
         return res.sendFile(__dirname + "/views/success.html"); }
     else{
         return res.sendFile(__dirname + "/views/failure.html");
